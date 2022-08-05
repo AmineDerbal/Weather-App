@@ -1,9 +1,9 @@
 # Weather-App
 
 This project is part of [the Odin Project](https://www.theodinproject.com/lessons/javascript-weather-app)
+## [LIVE on replit pages!](https://weather-app.cyberamined31.repl.co)
 
 fetches the current forecast based in the location input by the user.
-
 Uses the [[OpenWeatherMap API](https://openweathermap.org/api)] , and several other Framework (express,cors,ejs,dotenv and node-fetch).
 
 demonstrate an understanding of utilizing 3rd-party APIs and asynchronous patterns in JavaScript.
