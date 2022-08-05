@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Inter:wght@300&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(59, 193, 193);
+  color: rgb(255, 255, 255);
+}
+#city {
+  height: 1.8rem;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.submit {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 255, 255);
+  background: rgb(33, 88, 189);
+  border: rgb(33, 88, 189) solid 1px;
+  cursor: pointer;
+}
+
+#city,
+.submit {
+  font-size: medium;
+}
+.submit:hover {
+  scale: 1.1;
+  background: rgb(19, 53, 221);
+}
+
+.city-weather-info {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: fit-content;
+  animation: show 3s ease-in-out;
+}
+
+#weather-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lds-ring {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.city-informations-title {
+  font-family: "Roboto Serif", serif;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img {
+  width: 10rem;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header h1 {
+  font-family: "Roboto Serif", serif;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: blue;
+}
+.city-not-found {
+  text-align: justify !important;
+}
