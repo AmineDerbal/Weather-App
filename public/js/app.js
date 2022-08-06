@@ -17,7 +17,7 @@ const fetchWeather = async (city) => {
     const weatherStream = await fetch("http://localhost:3000/", options);
     const weatherJson = await weatherStream.json();
     return weatherJson;
-  } catch {
+  } catch (err) {
     return { Error: err.stack };
   }
 };
