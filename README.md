@@ -18,4 +18,8 @@ Install all the packages you need by running the command in your terminal.
 
 Create a .env file with the following code and your own OpenWeatherMap API Key, in the root of your project.
 
+### To Run This Project
+
+### 'npm run dev'
+
 
