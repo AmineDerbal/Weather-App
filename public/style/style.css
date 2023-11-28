@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Inter:wght@300&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Inter:wght@300&family=Montserrat:ital@1&family=Roboto+Serif:opsz,wght@8..144,200&display=swap');
 
 html,
 body {
@@ -96,21 +96,23 @@ body {
 }
 
 .city-informations-title {
-  font-family: "Roboto Serif", serif;
+  font-family: 'Roboto Serif', serif;
   font-weight: bolder;
   font-size: 4rem;
 }
 p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .weather {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.temp-data p {
+  text-align: left;
 }
 .img {
   width: 10rem;
@@ -126,7 +128,7 @@ p {
 }
 
 .header h1 {
-  font-family: "Roboto Serif", serif;
+  font-family: 'Roboto Serif', serif;
   font-weight: bolder;
   font-size: 3rem;
 }
@@ -139,4 +141,8 @@ a:hover {
 }
 .city-not-found {
   text-align: justify !important;
+}
+
+.github-links {
+  text-align: center;
 }
